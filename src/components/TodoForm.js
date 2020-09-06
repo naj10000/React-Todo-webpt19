@@ -1,3 +1,5 @@
 import React, { Component } from 'react'
 
-export default TodoForm
+export default class TodoForm extends Component {
+
+}
