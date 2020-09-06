@@ -6,10 +6,15 @@ import Todo from './Todo'
 
 
 
-export default function TodoList() {
+export default function TodoList(props) {
     return (
-        <div>
-            
+        <div className="todo-list">
+            {props.todos.map(todo => (
+                <Todo 
+                key={todo.id}
+                todo={todo} 
+                toggleTodo={props.toggleTodo}/>
+            ))}
             
         </div>
     )
